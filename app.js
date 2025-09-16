@@ -1,15 +1,49 @@
 //___task_________1st latter capital_______________________
+//_______mathode____one_______////////
+
+// var fullName = prompt("enter your first name");
+// fullName = fullName.slice(0,1).toUpperCase() + fullName.slice(1).toLowerCase() 
+// console.log(fullName); 
+
+
+//_______mathode____two_______////////
+
+// var myName = "umra "
+// var fatherName = "badar"
+// myName = myName.slice(0,1).toUpperCase() + myName.slice(1).toLowerCase();
+// fatherName = fatherName.slice(0,1).toUpperCase() + fatherName.slice(1).toLowerCase();
+// console.log("my ful name is " + myName + fatherName);
+
+//_______mathode____three_______////////
+
+// var userName = "muHeEra"
+// var firstChar = userName.slice(0,1).toUpperCase()
+// var fullName = firstChar + userName.slice(1).toLowerCase()
+// console.log(fullName);
+// console.log(userName.length);
 
 
 
 
+//_________finding a word in the sentence___________
+//____________task mathode____________________
 
-
-
-
-
-
-
+var sentence = "My name is Umra."
+var word = prompt("Enter a word to find:")
+var flag = false
+for(var i=0; i<sentence.length; i++){
+    if(sentence.slice(i,i+4).toLowerCase() === word.toLowerCase()){
+        console.log("Found");  
+        flag = true
+        break
+    }
+  
+} 
+  if (!flag) {
+        console.log("sorry not in the list");
+        
+        
+    }                 
 
 
 
@@ -61,24 +95,24 @@
 
 ////_______mathode___three____________//
 
-var fullName = prompt("enter your full name")
-var result = "";
-var temp = "";
-for (var i = 0; i < fullName.length; i++) {
-    if (i === 0) {
-        result += fullName[i].toUpperCase();
-    } else if (fullName[i] === " ") {
-        temp = fullName[i + 1].toUpperCase();
-        result += fullName[i];
-    }
-    else {
-        if (temp) {
-            result += temp;
-            temp = "";
-        } else {
+// var fullName = prompt("enter your full name")
+// var result = "";
+// var temp = "";
+// for (var i = 0; i < fullName.length; i++) {
+//     if (i === 0) {
+//         result += fullName[i].toUpperCase();
+//     } else if (fullName[i] === " ") {
+//         temp = fullName[i + 1].toUpperCase();
+//         result += fullName[i];
+//     }
+//     else {
+//         if (temp) {
+//             result += temp;
+//             temp = "";
+//         } else {
 
-            result += fullName[i];
-        }
-    }
-}
-console.log(result);
+//             result += fullName[i];
+//         }
+//     }
+// }
+// console.log(result);
